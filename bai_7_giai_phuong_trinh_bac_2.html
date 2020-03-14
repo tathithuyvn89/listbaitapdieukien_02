@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt("Nhập vào số thứ nhất a: "));
+    let b= parseInt(prompt("Nhập vào số thứ hai b: "));
+    let c= parseInt(prompt("Nhập vào số thứ ba c: "));
+
+    let x = b*b - 4*a*c;
+    if (x===0){
+        alert("Phuong trinh co nghiem ket x1 = x2= " + (-b/2/a));
+    } else if (x<0) {
+        alert("Phuong trinh vo nghiem");
+    } else{
+        alert("Phuong trinh co 2 nghiem phan biet ");
+    }
+</script>
+</body>
+</html>

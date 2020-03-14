@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen tu m sang feet</title>
+</head>
+<body>
+<h1> Chuyen doi tu m sang feet</h1>
+<form>
+    <p>Nhap so m</p>
+    <input id="chuyendoi" type="text"/>
+    <button type="button" onclick="tinhtoan()">Chuyen doi</button>
+    <p>ket qu chuyen doi</p>
+    <p id="result"></p>
+</form>
+
+<script>
+    function tinhtoan() {
+        let theom = document.getElementById("chuyendoi").value;
+        let theofeet = Number(theom)*30.8888;
+       document.getElementById("result").innerHTML=(theom+"m la " + theofeet+"feet");
+
+    }
+
+</script>
+</body>
+</html>
